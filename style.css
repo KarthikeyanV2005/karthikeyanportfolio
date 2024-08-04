@@ -11,17 +11,20 @@ header{
     background-color:#03346E;
 }
 
-header p{
-    font-size: 2em;
+.container .head{
+    font-size: 2.2em;
     font-weight: bold;
     display: inline;
     flex: 1;
-    color: #e77171;
+    color: #e89090;
     padding-left: 10px;
 }
 header nav{
     flex:1;
-    font-size: 1.05em;
+    font-size: 1.3em;
+    margin-left: 50%;
+    padding: 10px;
+
 }
 header a{
     text-decoration: none;
@@ -32,9 +35,7 @@ header a{
 header a:hover{
     color: rgb(53, 222, 165);
 }
-nav{
-    flex:1;
-}
+
 .container{
     margin: 10px;
     display: flex;
@@ -133,4 +134,17 @@ footer{
     .home p{
         width: 100%;
     }   
+}
+@media (max-width:650px) {
+    header nav{
+        margin-left: 20px;
+        margin-right: 20px;
+        display:flex;
+        flex: 1;
+        font-size: 1.4em;
+    }
+    header a{
+        flex: auto;
+    }
+    
 }
