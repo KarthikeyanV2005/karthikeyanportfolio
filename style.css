@@ -1,0 +1,136 @@
+*{
+    margin: 2px;
+}
+body{
+    background-color:#17153B;
+    color: aliceblue;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    background-color:#03346E;
+}
+
+header p{
+    font-size: 2em;
+    font-weight: bold;
+    display: inline;
+    flex: 1;
+    color: #e77171;
+    padding-left: 10px;
+}
+header nav{
+    flex:1;
+    font-size: 1.05em;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    margin: 2px;
+}
+header a:hover{
+    color: rgb(53, 222, 165);
+}
+nav{
+    flex:1;
+}
+.container{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+   font-size: 1.05em;
+   word-spacing: 5px;
+   letter-spacing: 1px;
+   font-family:'Times New Roman', Times, serif;
+   
+}
+.home h2,h1{
+    animation-name: name;
+    animation-duration: 3s;
+    animation: name 5s timing-function delay iteration-count forwards fill-mode;
+}
+h1{
+    margin-bottom: 10px;
+   
+    
+}
+@keyframes name {
+    0%{
+        font-size: small;
+        animation-direction: reverse;
+    }
+    100%{
+        
+    }
+}
+h2{
+    color: #E2E2B6;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+h3{
+    color: #F0A8D0;
+}
+.container img{
+    width:185px;
+    margin-top: 90px;
+    border-radius: 50%;
+    float: left; 
+}
+.school h3{
+    margin-left: 30px;
+}
+.school p{
+    margin-left: 50px;
+}
+.college h3{
+    margin-left: 30px;
+    
+}
+.college p{
+    margin-left: 50px;
+    margin-bottom:7px;
+}
+.contact p{
+    margin-left: 30px;
+    margin-bottom: 7px;
+}
+.right{
+    width: 65%;
+    float: right;
+    text-align: justify;
+    margin-right: 5px;
+}
+.contact img{
+    width:30px ;
+    margin-top:0px ;
+    margin-left: 30px;
+}
+.contact img{
+    background-color: white;
+    padding: 2px;
+}
+
+footer{
+    background-color:#021526 ;
+    padding: 5px;
+    font-size: 1.2em;
+}
+@media (max-width:670px) {
+    .home img{
+        margin-left: 25%;
+    }
+    .home{
+        padding-left: 20px;
+    }
+    .home h2{
+        width: 100%;
+    }
+    .home h1{
+        width: 100%;
+    }
+    .home p{
+        width: 100%;
+    }   
+}
